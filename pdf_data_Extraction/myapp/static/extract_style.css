@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#pdf-form-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.layout-container {
+    display: flex;
+    height: 90vh;
+}
+
+.data-container {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 60%;
+    font-size: 12px;
+}
+
+.pdf-container {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pdf-viewer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100%;
+}
+
+.extracted-data {
+    margin-top: 20px;
+}
+
+.watermark {
+    color: #999;
+    font-style: italic;
+}
+
+.loading-overlay {
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    height: 100%;
+    background: rgb(166, 171, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-icon {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.pdf-img {
+    width: 100%;
+}
+
+/*.pdf-img:hover {*/
+/*    width: max-content;*/
+/*}*/
+
+/* Add any other styles for your layout */
+
+.table-container {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    height: 60vh;
+    overflow: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.table-container td {
+    background-color: #ecf0f1;
+}
+
+.table-container table .nested-table {
+    width: 100%;
+    margin-top: 10px;
+    max-width: fit-content;
+}
+
+.table-container table .nested-table th,
+.table-container table .nested-table td {
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    text-align: left;
+}
+
+.table-container table .nested-table th {
+    background-color: #8b918b;
+    color: #fff;
+}
+
+.table-container table .nested-table td {
+    background-color: #fdf7f7;
+}
+
+
+.buttons-container {
+    display: flex;
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: #949191;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .active {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
